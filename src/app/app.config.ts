@@ -2,13 +2,15 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZoneChang
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
-import { provideStore } from '@ngrx/store';
+import { provideState, provideStore, StoreModule } from '@ngrx/store';
+import { turnoReducer } from './modules/core/store/reducers/turno.reducer';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideStore()
-]
+    provideStore(),
+    provideState({ name: 'turno', reducer: turnoReducer })
+  ]
 };
