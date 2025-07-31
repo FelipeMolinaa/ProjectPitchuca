@@ -1,7 +1,5 @@
+import { Core } from "@models/core";
 import { createAction, props } from "@ngrx/store";
-import { Feature } from "../../models/features/feature";
-import { Plataforma } from "../../models/Plataforma";
-import { Core } from "../../models/core";
 
 export const configuraCore = createAction('[Core] Configura Core', props<Core>());
 

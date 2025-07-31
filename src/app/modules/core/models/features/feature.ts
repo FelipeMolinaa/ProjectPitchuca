@@ -1,5 +1,5 @@
 import { FeatureMultiplicador } from "./featureMultiplicador";
-import { FeaturesQualidade } from "./FeaturesQualidade";
+import { FeaturesQualidade } from "./featuresQualidade";
 
 export interface Feature {
     id: string;

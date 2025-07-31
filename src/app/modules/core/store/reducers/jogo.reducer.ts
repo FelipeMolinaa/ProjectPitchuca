@@ -1,7 +1,6 @@
 import { createReducer, createReducerFactory, on } from "@ngrx/store";
-import { Turno } from "../../models/turno";
-import { JogoEmDesenvolvimento } from "../../models/jogoEmDesenvolvimento";
-import { atualizaDesenvolvimentoJogo, atualizaFeatures, cancelaJogo, lancaJogo, novoJogo } from "../actions/jogo.action";
+import { JogoEmDesenvolvimento } from "@models/jogoEmDesenvolvimento";
+import { atualizaDesenvolvimentoJogo, atualizaFeatures, cancelaJogo, lancaJogo, novoJogo } from "@store/actions/jogo.action";
 
 function criaEstadoInicial(): JogoEmDesenvolvimento {
     return {

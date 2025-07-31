@@ -1,6 +1,6 @@
+import { Turno } from "@models/turno";
 import { createReducer, createReducerFactory, on } from "@ngrx/store";
-import { configuraTurno, proximoSubTurno, proximoTurno } from "../actions/turno.action";
-import { Turno } from "../../models/turno";
+import { configuraTurno, proximoSubTurno, proximoTurno } from "@store/actions/turno.action";
 
 export const estado: Turno = {
     turno: 0, subTurno: 0

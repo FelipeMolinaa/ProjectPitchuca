@@ -1,4 +1,3 @@
-import { Feature } from "./features/feature";
 import { Plataforma } from "./Plataforma";
 
 export interface JogoEmDesenvolvimento {

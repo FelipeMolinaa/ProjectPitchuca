@@ -1,9 +1,6 @@
-import { createReducer, createReducerFactory, on } from "@ngrx/store";
-import { Turno } from "../../models/turno";
-import { JogoEmDesenvolvimento } from "../../models/jogoEmDesenvolvimento";
-import { atualizaDesenvolvimentoJogo, atualizaFeatures, cancelaJogo, lancaJogo, novoJogo } from "../actions/jogo.action";
-import { adicionaDinheiro, adicionaFans, configuraCore, FinalizaDesenvolvimentoJogo, IniciaDesenvolvimentoJogo, removeDinheiro, removeFans } from "../actions/core.action";
-import { Core } from "../../models/core";
+import { Core } from "@models/core";
+import { createReducer, on } from "@ngrx/store";
+import { adicionaDinheiro, adicionaFans, configuraCore, FinalizaDesenvolvimentoJogo, IniciaDesenvolvimentoJogo, removeFans } from "@store/actions/core.action";
 
 function criaEstadoInicial(): Core {
     return {
