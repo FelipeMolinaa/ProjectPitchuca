@@ -1,9 +1,7 @@
 export interface Pessoa {
     nome: string;
-    idade: number;
-    design: number;
-    tecnologia: number;
-    velocidade: number;
+    especializacao: string; // permite a utilizacao de features especificas
+    produtividade: number; // produtividade = PD por subturno
     energia: number;
     salario: number;
 }

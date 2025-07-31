@@ -1,0 +1,27 @@
+sistema de turnos:
+cada turno = 1 mes (irão passar manualmente pelo usuario)
+cada subturno (total 4 por turno) = 1 semana (passarão automaticamente a cada 15 segundos)
+
+criação de jogos
+    1. iniciar criação de jogos
+    2. preencher dados iniciais (nome do jogo, publico alvo, topico, genero, consoles)
+    3. selecionar features 
+
+qual a ideia dos PDs?
+
+selecionar features e consoles para o jogo aumentarão o numero de PDs necessarios
+funcionarios produzem PDs de acordo com sua produtividade, 10 de produtividade = 10 PDs por subturno
+um jogo lançado com 50% dos PDs concluidos vai possuir 50% de penalidade na critica 
+um jogo lancado cujo quantidade de bugs > 0 vai possuir penalidades (não sei proporção ainda)
+
+
+como features vão funcionar?
+
+um jogo pode ter N features
+cada feature custará PDs
+algumas features combinadas possuem um multiplicador de PDs, ex: a feature "densidade de props" tem um multiplicador de 3x quando combinado com mundo aberto, ou seja, se ele como base custa 100, com a feature mundo aberto ele vai custar 300
+algumas features só são liberadas se outras forem habilitadas, coop -> multiplayer / mmorpg -> multiplayer
+algumas features só estão disponiveis se houver algum membro na equipe que possua a especialização necessaria
+A combinação de algumas features pode aumentar ou diminuir a qualidade do jogo
+futuramente algumas features deverão ser primeiro pesquisadas nas engines para estarem disponiveis no desenvolvimento do jogo
+
