@@ -16,6 +16,8 @@
     "module": "preserve",
     "baseUrl": "./",
     "paths": {
+      "@components/*": ["src/app/modules/core/components/*"],
+      "@styles/*":["src/styles/*"],
       "@store/*": [
         "src/app/modules/core/store/*"
       ],
