@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 export type ButtonType = 'default' | 'success' | 'warning' | 'info' | 'danger';
 export type ButtonSize = 'small' | 'medium' | 'big';
 @Component({
-  selector: 'app-generic-button',
+  selector: 'app-button',
   imports: [MatButtonModule, NgClass],
   templateUrl: './generic-button.html',
   styleUrl: './generic-button.scss'
