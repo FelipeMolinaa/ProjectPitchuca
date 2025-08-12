@@ -1,8 +1,4 @@
-<div
-  class="bg-gray-900 text-gray-100 overflow-hidden
-         bg-gray-800 text-gray-200
-         w-full max-w-md mx-auto"
->
+<div class="bg-neutral-dark">
   <div class="px-6 py-4">
     <h2 class="text-2xl font-semibold text-green-500">
       {{ data.title }}
@@ -10,26 +6,14 @@
     <p class="mt-2 text-gray-300">{{ data.message }}</p>
   </div>
 
-  <div
-    class="border-t border-gray-700 px-6 py-4
-           flex justify-end space-x-3"
-  >
-    <button
-      mat-button
-      class="bg-gray-800 hover:bg-gray-700 text-gray-300
-             px-4 py-2 rounded"
-      (click)="onCancel()"
-    >
+  <div class="border-t border-gray-700 px-6 py-4
+           flex justify-end space-x-3">
+    <app-button mat-button (click)="onCancel()" type="danger">
       {{ data.cancelText || 'Cancel' }}
-    </button>
+    </app-button>
 
-    <button
-      mat-raised-button
-      class="bg-green-600 hover:bg-green-700 text-white
-             px-4 py-2 rounded"
-      (click)="onConfirm()"
-    >
+    <app-button mat-raised-button (click)="onConfirm()" type="success">
       {{ data.confirmText || 'Accept' }}
-    </button>
+    </app-button>
   </div>
 </div>
